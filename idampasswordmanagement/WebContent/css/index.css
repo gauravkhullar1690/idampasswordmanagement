@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #f8f8f8;
+}
+.idamdynamicdiv{
+	margin-top: -33px;
+}
+footer {
+	text-align: center;
+}
+
+.form-signin {
+	padding-top: 100px;
+	display: block;
+	width: 100%; /* THIS */
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555; /* THIS */
+	background-color: #ffe;
+	background-image: none;
+	border: 1px solid #ccc; /* THIS */
+	border-radius: 4px; /* THIS */
+}

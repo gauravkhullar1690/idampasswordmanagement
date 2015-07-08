@@ -1,0 +1,44 @@
+{
+	"leftMenuName" : "setupLeftMenu",
+	"menuItems" : [
+		{
+			"id": "GlobalConfiguration",
+			"name": "Global Configuration",
+			"html": "htmls/setup/global-configuration.html"
+		},
+		{
+			"id": "NotificationTemplates",
+			"name": "Notification Templates",
+			"html": "htmls/setup/notification-templates.html"
+		},
+		{
+			"id": "ConnectorConfiguration",
+			"name": "Connector Configuration",
+			"html": "htmls/setup/connector-configuration.html",
+			"child": [
+				{
+					"name": "Connector Templates",
+					"html": "htmls/setup/connector/connector-templates.html"
+				},
+				{
+					"name": "Connectors",
+					"html": "htmls/setup/connector/connectors.html"
+				},
+				{
+					"name": "Connector Parameters",
+					"html": "htmls/setup/connector/connector-parameters.html"
+				}
+			]
+		},
+		{
+			"id": "PasswordPolicy",
+			"name": "Password Policy",
+			"html": "htmls/setup/password-policy.html"
+		},
+		{
+			"id": "AccountMappingRules",
+			"name": "Account Mapping Rules",
+			"html": "htmls/setup/account-mapping-rules.html"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="css/home/home-page.css" />
+<link rel="stylesheet" type="text/css" href="css/home/left-menu.css" />
+<div class="row home-landing-page" id="home-landing-page">
+	<div class="col-lg-12">
+		<ul class="nav nav-tabs responsive" role="tablist">
+			<li ng-repeat="tab in tabs" role="presentation" ng-class="{'active': tab.default === true}"><a ng-click="selectTab(tab.html)"
+				aria-controls="home" role="tab" data-toggle="tab">{{tab.name}}</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div id="tab-work-area" class="tab-content"></div>
+	</div>
+</div>

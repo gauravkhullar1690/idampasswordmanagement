@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.idam.passwordmanagement.model.group.Group" table="CLG_DIARY_GROUP">
+		<id name="groupId" type="java.lang.Long">
+			<column name="GROUP_ID" />
+			<generator class="org.hibernate.id.MultipleHiLoPerTableGenerator">
+				<param name="table">AFBMSEQUENCE</param>
+				<param name="primary_key_value">ID</param>
+				<param name="value_column">SEQUENCE_VALUE</param>
+				<param name="primary_key_column">SEQUENCE_NAME</param>
+				<param name="max_lo">0</param>
+			</generator>
+		</id>
+		
+		<property name="name" type="java.lang.String">
+			<column name="NAME"  unique="true"/>
+		</property>
+		
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPUTION" not-null="true" length="2000"/>
+		</property>
+
+		<one-to-one name="groupAdmin" class="com.idam.passwordmanagement.model.user.MasterUser">
+        </one-to-one>
+	</class>
+</hibernate-mapping>

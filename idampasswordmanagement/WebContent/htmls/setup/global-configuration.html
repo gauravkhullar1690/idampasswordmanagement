@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css"
+	href="css/home/setup/global-configuration.css" />
+
+
+
+<div ng-controller="GlobalConfigController">
+
+	<div class="gridStyle" ng-grid="gridOptions"></div>
+
+	<hr>
+	
+	<button class="btn btn-warning" ng-click="editParameter()">
+		Edit Selected Parameter
+	</button>
+	
+	<button class="btn btn-danger" ng-click="deleteParameter()">
+		Delete Selected Parameter
+	</button>
+	
+	<button class="btn btn-info" ng-click="createNewParameter()">
+		Add New Parameter
+	</button>
+	
+	<hr>
+
+	<h3 ng-show="!edit">Create New Parameter:</h3>
+	<h3 ng-show="edit">Edit Parameter:</h3>
+
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Parameter Name:</label>
+			<div class="col-sm-10">
+				<input type="text" ng-model="name" ng-disabled="edit"
+					placeholder="Parameter Name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Parameter Value:</label>
+			<div class="col-sm-10">
+				<input type="text" ng-model="value"
+					placeholder="Parameter value">
+			</div>
+		</div>
+	</form>
+
+	<hr>
+	
+	<button ng-click="saveParameter()" class="btn btn-success" >
+		Save Changes
+	</button>
+
+</div>

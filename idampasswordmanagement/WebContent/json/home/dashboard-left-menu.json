@@ -1,0 +1,25 @@
+{
+	"leftMenuName" : "dashboardLeftMenu",
+	"menuItems" : [
+		{
+			"id": "AttemptedVsSuccessPasswordReset",
+			"name": "Attempted Vs Success",
+			"html": "htmls/dashboards/AttemptedVsSuccessPasswordReset.html"
+		},
+		{
+			"id": "LoginFailure",
+			"name": "Login Failure Count",
+			"html": "htmls/dashboards/LoginFailure.html"
+		},
+		{
+			"id": "MonthlyPasswordReset",
+			"name": "Monthly Password Reset",
+			"html": "htmls/dashboards/MonthlyPasswordReset.html"
+		},
+		{
+			"id": "PasswordResetSystemWise",
+			"name": "System Wise Reset",
+			"html": "htmls/dashboards/PasswordReset-DrillDown.html"
+		}
+	]
+}

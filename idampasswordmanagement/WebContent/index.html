@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="idam">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+	content="Here we connect the Alumini, Teacher, Friends">
+<meta name="keywords" content="Alumini,Teacher,Friends,Assignment">
+<meta name="author" content="Varun Makol">
+<meta name="generator" content="varun">
+<title>IdAM @ PCS</title>
+
+
+<!-- Vendor CSS -->
+<link rel="stylesheet" type="text/css"
+	href="vendors/bootstrap/core/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css"
+	href="vendors/imageSelect/css/imgareaselect-animated.css" />
+<link rel="stylesheet" type="text/css"
+	href="vendors/imageSelect/css/imgareaselect-default.css" />
+<link rel="stylesheet" type="text/css"
+	href="vendors/imageSelect/css/imgareaselect-deprecated.css" />
+<link rel="stylesheet" type="text/css"
+	href="vendors/angular/ng-grid.css" />
+
+<!-- Vendor Scripts Start -->
+<script src="vendors/jquery/jquery-1.10.2.js"></script>
+<script src="vendors/jquery-ui/development-bundle/ui/jquery.ui.core.js"></script>
+<script src="vendors/jquery-ui/development-bundle/ui/jquery.ui.widget.js"></script>
+<script src="vendors/jquery-ui/development-bundle/ui/jquery.ui.accordion.js"></script>
+<script src="vendors/bootstrap/core/js/bootstrap.js"></script>
+<script src="vendors/bootstrap/bootbox/bootbox.js"></script>
+<script src="vendors/angular/angular.js"></script>
+<script src="vendors/angular/angular-ui-router.js"></script>
+<script src="vendors/angular/angular-animate.min.js"></script>
+<script src="vendors/angular/angular-cookies.js"></script>
+<script src="vendors/angular/ui-bootstrap-tpls-0.13.0.js"></script>
+<script src="vendors/angular/ng-grid-2.0.14.debug.js"></script>
+<script src="vendors/imageSelect/js/jquery.imgareaselect.js"></script>
+<script src="vendors/fusioncharts/fusioncharts.js"></script>
+<script src="vendors/fusioncharts/angular-fusioncharts.min.js"></script>
+
+
+
+<!-- Vendor Scripts End -->
+
+<!-- Controllers Start -->
+<script src="scripts/controllers/mainController.js"></script>
+<script src="scripts/controllers/accountController.js"></script>
+<script src="scripts/controllers/RegistrationController.js"></script>
+<script src="scripts/controllers/SelfServiceController.js"></script>
+<script src="scripts/controllers/HelpDeskController.js"></script>
+<script src="scripts/controllers/LoginController.js"></script>
+<script src="scripts/controllers/home/HomePageController.js"></script>
+<script src="scripts/controllers/home/SetUpController.js"></script>
+<script src="scripts/controllers/home/PasswordManagementController.js"></script>
+<script src="scripts/controllers/home/ReportController.js"></script>
+<script src="scripts/controllers/home/DashboardController.js"></script>
+<script src="scripts/controllers/home/setup/GlobalConfigController.js"></script>
+<script src="scripts/controllers/home/setup/NotificationTemplateController.js"></script>
+<script src="scripts/controllers/home/setup/PasswordResetSummaryController.js"></script>
+<script src="scripts/controllers/home/setup/ConnectorTemplateController.js"></script>
+<script src="scripts/fusioncharts/AttemptedVsSuccessPasswordReset.js"></script>
+<script src="scripts/fusioncharts/LoginFailure.js"></script>
+<script src="scripts/fusioncharts/MonthlyPasswordReset.js"></script>
+<script src="scripts/fusioncharts/PasswordResetDrillDown.js"></script>
+
+
+
+<!-- Controllers End -->
+
+
+<!-- Services Scripts End -->
+<script src="scripts/services/commonService.js"></script>
+<script src="scripts/services/login/loginService.js"></script>
+<script src="scripts/services/user/userServices.js"></script>
+<script src="scripts/services/topBarService.js"></script>
+<script src="scripts/services/home/dataService.js"></script>
+<!-- Services Scripts End -->
+
+<!-- application states Start -->
+<script src="scripts/states/states.js"></script>
+<!--  application states Scripts End -->
+
+<!-- main page css Start -->
+<link rel="stylesheet" type="text/css"	href="css/index.css" />
+<link rel="stylesheet" type="text/css"	href="css/home/setup/global-configuration.css" />
+<link rel="stylesheet" type="text/css"	href="css/home/left-menu.css" />
+<link rel="shortcut icon" href="images/MyCollegeDiary.jpg">
+<!-- main page css End -->
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">IdAM @ PCS</a>
+			</div>
+		</div>
+</nav>
+	<div ui-view class="idamdynamicdiv"></div>
+	<footer>
+		<p>&copy; Paramount Computer Systems 2015</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+	{
+		"id":"1",
+		"name": "AD",
+		"appversion": "Version 3",
+		"class": "com.idam.pwd.module.AD.PasswordReset"		 
+	},
+	{
+		"id":"2",
+		"name": "SAP",
+		"appversion": "11.0.1",
+		"class": "com.idam.pwd.module.SAP.PasswordReset"	 
+	},
+	{
+		"id":"3",
+		"name": "CSF",
+		"appversion": "4.0",
+		"class": "com.idam.pwd.module.CSF.PasswordReset" 
+	},
+	{
+		"id":"4",
+		"name": "FinnOne",
+		"appversion": "3.6",
+		"class": "com.idam.pwd.module.FinnOne.PasswordReset" 
+	},
+	{
+		"id":"4",
+		"name": "AMS",
+		"appversion": "5",
+		"class": "com.idam.pwd.module.AMS.PasswordReset"  
+	},
+	{
+		"id":"5",
+		"name": "WorkStream",
+		"appversion": "2.0",
+		"class": "com.idam.pwd.module.WorkStream.PasswordReset"  
+	},
+	{
+		"id":"5",
+		"name": "PrimeJobs",
+		"appversion": "2.0",
+		"class": "com.idam.pwd.module.PrimeJobs.PasswordReset" 
+	}
+]

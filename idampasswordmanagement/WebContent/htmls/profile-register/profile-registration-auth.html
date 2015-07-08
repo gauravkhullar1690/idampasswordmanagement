@@ -1,0 +1,19 @@
+<div class="form-group col-xs-6 col-xs-offset-3 row">
+    <label for="name">Employee No</label>
+    <input type="text" class="form-control" name="name" ng-model="formData.empNo">
+</div>
+
+<div class="form-group col-xs-6 col-xs-offset-3 row">
+    <label for="email">Password</label>
+    <input type="password" class="form-control" name="email" ng-model="formData.password">
+</div>
+<div ng-show=test class="form-group col-xs-6 col-xs-offset-3 row">
+	<progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>
+</div>
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ng-click="nextSection()" ui-sref="registration.step1" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>

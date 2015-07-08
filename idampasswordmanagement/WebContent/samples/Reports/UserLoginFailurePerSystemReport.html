@@ -1,0 +1,88 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report - User Login Failure per System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Scripts/bootstrap.min.css">
+	<link rel="stylesheet" href="Scripts/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Scripts/font-awesome.min.css">
+	<link rel="stylesheet" href="Scripts/ng-table.css">
+
+    <!-- JS -->
+    <script src="Scripts/angular.min.js"></script>
+	<script src="Scripts/ng-table.js"></script>
+    <script src="Scripts/ng-table-export.src.js"></script>
+    <script src="Scripts/loginFailure.js"></script>
+
+</head>
+<body>
+<div  ng-app="sortApp" ng-controller="mainController">
+  
+  <div class="alert alert-info">
+    <p><u><b>Report - User Login Failure per System</b></u></p>
+  </div>
+  
+  <a class="btn btn-primary" ng-mousedown="csv.generate()" ng-href="{{ csv.link() }}" download="Report.csv">Export to CSV</a>
+  
+  <table class="table table-bordered table-striped" ng-table="tableParams" export-csv="csv">
+    
+    <thead>
+      <tr>
+        <td>
+          <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+            User Name
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'fname'; sortReverse = !sortReverse">
+			First Name
+          </a>
+        </td>
+        <td>
+          <a href="#" ng-click="sortType = 'lname'; sortReverse = !sortReverse">
+          Last Name
+          </a>
+        </td>
+		<td>
+          <a href="#" ng-click="sortType = 'system'; sortReverse = !sortReverse">
+          System Name
+          </a>
+        </td>
+		<td>
+          <a href="#" ng-click="sortType = 'age'; sortReverse = !sortReverse">
+          Failed Login Count (FLC)
+          </a>
+        </td>
+      </tr>
+    </thead>
+    
+    <tbody>
+	<tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:fname">
+			<td>{{ roll.name }}</td>
+			<td>{{ roll.fname }}</td>
+			<td>{{ roll.lname }}</td>
+			<td>{{ roll.system }}</td>
+			<td>{{ roll.age }}</td>
+    </tr>
+	  <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+        <input type="text" class="form-control" placeholder="Search by First Name" ng-model="fname">
+      </div>      
+    </div>
+  </form>
+    </tbody>
+    
+	<!-- <p><strong>Page:</strong> {{tableParams.page()}}</p>
+    <p><strong>Count per page:</strong> {{tableParams.count()}}</p> -->
+	
+  </table>
+  
+</div>
+</body>
+</html>

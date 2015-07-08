@@ -1,0 +1,15 @@
+<div class="accordion" id="{{leftMenu.leftMenuName}}">
+		<div ng-repeat="item in leftMenu.menuItems" class="accordion-group">
+			<div class="accordion-heading" ng-click=openItem(item)>
+				<a class="accordion-toggle" data-toggle="collapse"
+					data-target="#{{item.id}}" data-parent="#{{leftMenu.leftMenuName}}"> <i class="icon-home"></i>
+					{{item.name}}
+				</a>
+			</div>
+			<div ng-if="showChild(item)" id="{{item.id}}" class="accordion-body collapse" style="height: 0px;">
+				<div class="accordion-inner">
+						<div ng-repeat="subItem in item.child" ng-click=openItem(subItem)>{{subItem.name}}</div>
+				</div>
+			</div>
+		</div>
+</div>

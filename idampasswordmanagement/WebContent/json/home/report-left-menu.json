@@ -1,0 +1,20 @@
+{
+	"leftMenuName" : "reportLeftMenu",
+	"menuItems" : [
+		{
+			"id": "UserLoginFailurePerSystemReport",
+			"name": "Login Failure Per System",
+			 "src": "http://localhost:9090/idampasswordmanagement/samples/Reports/UserLoginFailurePerSystemReport.html"
+		},
+		{
+			"id": "UserPasswordResetPerSystemReport",
+			"name": "Reset Per System",
+			"src": "http://localhost:9090/idampasswordmanagement/samples/Reports/UserPasswordResetPerSystemReport.html"
+		},
+		{
+			"id": "UserPasswordResetRequestPerSystemReport",
+			"name": "Request Per System",
+			"src": "http://localhost:9090/idampasswordmanagement/samples/Reports/UserPasswordResetRequestPerSystemReport.html"
+		}
+	]
+}

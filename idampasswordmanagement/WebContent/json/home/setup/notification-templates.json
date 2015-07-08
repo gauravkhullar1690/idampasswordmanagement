@@ -1,0 +1,30 @@
+	[
+		{
+			"id":"1",
+			"name": "Password Reset Self-Service Success",
+			"from": "{globalSupportEmail}",
+			"subject": "Password Reset Successful!!",
+			"body":"Password has been changes successfully for the following system(s) [systems]" 
+		},
+		{
+			"id":"2",
+			"name": "Password Reset Self-Service Failed",
+			"from": "{globalSupportEmail}",
+			"subject": "Password Reset Failed!!",
+			"body":"Your request for Password change failed." 
+		},
+		{
+			"id":"3",
+			"name": "Password Reset Help-Desk Success",
+			"from": "{helpDeskEmail}",
+			"subject": "Password Reset Success!!",
+			"body":"Password has been changes successfully for the following system(s) [systems]" 
+		},
+		{
+			"id":"4",
+			"name": "Password Reset Help-Desk Failed",
+			"from": "{helpDeskEmail}",
+			"subject": "Password Reset Failed!!",
+			"body":"Your request for Password change failed." 
+		}
+	]

@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css"
+	href="css/login/log-in.css">
+<div class="row log-in-holder-row">
+	<div class="col-md-12 col-md-offset-4 log-in-holder-col">
+		<form class="form-signin" role="form" name="loginForm" novalidate>
+			<h2 class="form-signin-heading">Login</h2>
+			<div class="form-group">
+				<input ng-model="form.masterUser.email" type="email"
+					placeholder="Employee Id" class="form-control" required autofocus>
+			</div>
+			<div class="form-group">
+				<input ng-model="form.masterUser.password" type="password"
+					placeholder="Password" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<button ng-click="performLogin()" type="submit"
+					class="btn btn-success">Login</button>
+			</div>
+		</form>
+	</div>
+</div>

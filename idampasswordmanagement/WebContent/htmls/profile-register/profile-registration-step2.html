@@ -1,0 +1,34 @@
+<label>Help-Desk Password Reset Challenge Questions</label>
+<div class="form-group">
+      <label for="sel1">Question 1:</label>
+      <select ng-change="changeValue(support1)" ng-init="support1" ng-model="support1"  class="form-control" ng-options="question.name for question in support">
+      </select>
+      <label for="ans1">Answer 1:</label>
+  	  <input type="password" class="form-control" id="ans1">
+  	  <label for="ans1">Verify Answer 1:</label>
+  	  <input type="password" class="form-control" id="ans1">
+</div>
+<hr>
+<div class="form-group">
+      <label for="sel2">Question 2:</label>
+      <select ng-change="changeValue(support2)" ng-init="support2" ng-model="support2"  class="form-control" ng-options="question.name for question in support">
+      </select>
+      <label for="ans1">Answer 2:</label>
+  	  <input type="password" class="form-control" id="ans2">
+  	  <label for="ans1">Verify Answer 2:</label>
+  	  <input type="password" class="form-control" id="ans2">
+</div>
+<hr>
+<div class="form-group">
+      <label for="sel3">Question 3:</label>
+      <select ng-change="changeValue(support3)" ng-init="support3" ng-model="support3"  class="form-control" ng-options="question.name for question in support">
+      </select>
+      <label for="ans1">Answer 3:</label>
+  	  <input type="password" class="form-control" id="ans3">
+  	  <label for="ans1">Verify Answer 3:</label>
+  	  <input type="password" class="form-control" id="ans2">
+</div>
+
+<div class="text-center col-xs-6 col-xs-offset-3">
+    <button type="submit" class="btn btn-info">Submit</button>
+</div>

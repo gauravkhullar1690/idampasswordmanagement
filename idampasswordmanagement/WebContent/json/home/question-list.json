@@ -1,0 +1,46 @@
+{
+	"selfService" : [
+		{
+			"id": "1",
+			"name": "What was your favorite place to visit as a child?"
+		},
+		{
+			"id": "2",
+			"name": "Who is your favorite actor, musician, or artist?"
+		},
+		{
+			"id": "3",
+			"name": "What is the name of your favorite pet?"
+		},
+		{
+			"id": "4",
+			"name": "In what city were you born?"
+		},
+		{
+			"id": "5",
+			"name": "What high school did you attend?"
+		}
+	],
+	"support" : [
+		{
+			"id": "1",
+			"name": "What is the name of your first school?"
+		},
+		{
+			"id": "2",
+			"name": "What is your favorite movie?"
+		},
+		{
+			"id": "3",
+			"name": "What is your mother's maiden name?"
+		},
+		{
+			"id": "4",
+			"name": "What street did you grow up on?"
+		},
+		{
+			"id": "5",
+			"name": "Which is your favorite web browser?"
+		}
+	]
+}

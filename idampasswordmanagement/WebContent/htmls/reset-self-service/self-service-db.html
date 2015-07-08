@@ -1,0 +1,18 @@
+<label>Reset Password for Generic Database System</label>
+<hr>
+<div class="form-group">
+	<ul>
+		<li ng-repeat="item in dbList" class={{(item.target+item.ruleId)}}>{{item.name}}</li>
+	</ul>
+</div>
+
+<div class="form-group">
+	<label for="DBPassword">Password:</label> 
+	<input type="password" ng-model="db.password"	ng-keyup="checkPW($event)"	class="form-control" id="DBPassword" name="DBPassword" >
+	 <label		for="DBPasswordVerify">Confirm Password:</label> 
+	 <input	type="password" ng-model="db.passwordVerify" ng-keyup="checkPW($event)"	 class="form-control" id="DBPasswordVerify"	 name="DBPasswordVerify"	>
+</div>
+
+<div class="text-center col-xs-6 col-xs-offset-3">
+	<button ng-click="processForm()" type="submit" class="btn btn-info">Reset</button>
+</div>

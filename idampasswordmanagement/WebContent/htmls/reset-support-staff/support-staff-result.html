@@ -1,0 +1,31 @@
+<table class="table table-bordered">
+
+	<thead>
+		<tr>
+			<td><b>Connector Name</b></td>
+			<td><b>Account Name</b></td>
+			<td><b>Reset Status</b></td>
+			<td><b>Message</b></td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Active Directory</td>
+			<td>gkhullar</td>
+			<td>{{ ad.result }}</td>
+			<td>{{ ad.message }}</td>
+		</tr>
+		<tr>
+			<td>SQL Server</td>
+			<td>gkhullar</td>
+			<td>{{ db.result }}</td>
+			<td>{{ db.message }}</td>
+		</tr>
+	</tbody>
+</table>
+<div class="text-center col-xs-6 col-xs-offset-3">
+	<a ng-click="navigate()" class="btn btn-block btn-info">
+    Home <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>

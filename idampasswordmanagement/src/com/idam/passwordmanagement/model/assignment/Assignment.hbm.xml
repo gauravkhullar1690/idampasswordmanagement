@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.idam.passwordmanagement.model.assignment.Assignment" table="CLG_DIARY_ASSIGNMENT">
+		<id name="assignmentId" type="java.lang.Long">
+			<column name="ASSIGNMENT_ID" />
+			<generator class="org.hibernate.id.MultipleHiLoPerTableGenerator">
+				<param name="table">AFBMSEQUENCE</param>
+				<param name="primary_key_value">ID</param>
+				<param name="value_column">SEQUENCE_VALUE</param>
+				<param name="primary_key_column">SEQUENCE_NAME</param>
+				<param name="max_lo">0</param>
+			</generator>
+		</id>
+		
+		<property name="docType" type="java.lang.String">
+			<column name="DOCUMENT_TYPE"  unique="true"/>
+		</property>
+		
+		<property name="docSize" type="java.lang.String">
+			<column name="DOCUMENT_SIZE" not-null="true" />
+		</property>
+
+		<property name="docLocation" type="java.lang.Boolean">
+			<column name="DOCUMENT_LOCATION" />
+		</property>
+	</class>
+</hibernate-mapping>

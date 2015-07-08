@@ -1,0 +1,42 @@
+	[
+		{
+			"id":"logLevel",
+			"name": "Log-level",
+			"value": "INFO" 
+		},
+		{
+			"id":"authSystem",
+			"name": "Authentication System",
+			"value": "AD" 
+		},
+		{
+			"id":"globalSupportEmail",
+			"name": "Global Support Email",
+			"value": "test@testnet.com" 
+		},
+		{
+			"id":"globalSupportName",
+			"name": "Global Support Name",
+			"value": "Test IT Support" 
+		},
+		{
+			"id":"globalSupportPhone",
+			"name": "Global Support Phone",
+			"value": "987458968" 
+		},
+		{
+			"id":"helpDeskEmail",
+			"name": "Help Desk Email",
+			"value": "testHelp@testnet.com" 
+		},
+		{
+			"id":"helpDeskPhone",
+			"name": "Help Desk Phone",
+			"value": "787458968" 
+		},
+		{
+			"id":"companyLogoPath",
+			"name": "Company Logo Path",
+			"value": "E:\\IDAM" 
+		}
+	]

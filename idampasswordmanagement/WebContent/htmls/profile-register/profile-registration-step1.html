@@ -1,0 +1,38 @@
+<label>Self-Service Password Reset Challenge Questions</label>
+<div class="form-group">
+      <label for="sel1">Question 1:</label>
+      <select ng-change="changeValue(selfService1)" ng-init="selfService1" ng-model="selfService1"  class="form-control" ng-options="question.name for question in selfService">
+      </select>
+      <label for="ans1">Answer 1:</label>
+  	  <input type="password" class="form-control" id="ans1">
+  	  <label for="ans1">Verify Answer 1:</label>
+  	  <input type="password" class="form-control" id="ans1">
+</div>
+<hr>
+<div class="form-group">
+      <label for="sel2">Question 2:</label>
+      <select ng-change="changeValue(selfService2)" ng-init="selfService2" ng-model="selfService2"  class="form-control" ng-options="question.name for question in selfService">
+      </select>
+      <label for="ans1">Answer 2:</label>
+  	  <input type="password" class="form-control" id="ans2">
+  	  <label for="ans1">Verify Answer 2:</label>
+  	  <input type="password" class="form-control" id="ans2">
+</div>
+<hr>
+<div class="form-group">
+      <label for="sel3">Question 3:</label>
+      <select ng-change="changeValue(selfService3)" ng-init="selfService3" ng-model="selfService3"  class="form-control" ng-options="question.name for question in selfService">
+      </select>
+      <label for="ans1">Answer 3:</label>
+  	  <input type="password" class="form-control" id="ans3">
+  	  <label for="ans1">Verify Answer 3:</label>
+  	  <input type="password" class="form-control" id="ans3">
+</div>
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="registration.step2" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>

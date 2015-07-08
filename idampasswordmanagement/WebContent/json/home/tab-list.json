@@ -1,0 +1,35 @@
+[
+	{
+		"id":"home.setup",
+		"name":"Setup",
+		"html":"htmls/home/tabs/Setup.html"
+		
+	},
+	{
+		"id":"PasswordManagement",
+		"name":"Password Management",
+		"html":"htmls/home/tabs/PasswordManagement.html",
+		"default": true
+		
+	},
+	{
+		"id":"Reports",
+		"name":"Reports",
+		"html":"htmls/home/tabs/Reports.html"
+	},
+	{
+		"id":"Dashboards",
+		"name":"Dashboards",
+		"html":"htmls/home/tabs/Dashboards.html"
+	},
+	{
+		"id":"Help",
+		"name":"Help",
+		"html":"htmls/home/tabs/Help.html"
+	},
+	{
+		"id":"ContactUs",
+		"name":"Contact Us",
+		"html":"htmls/home/tabs/ContactUs.html"
+	}
+]
